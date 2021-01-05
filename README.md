@@ -1,13 +1,13 @@
-# `info`
+# `Info`
 Search and play youtube videos using youtube api 
 
-## `technologies`
+## `Technologies`
 React js , HTML , APIS
 
 #### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-## run the project
+## Run the project
 ### `yarn start`
 
 Runs the app in the development mode.\
