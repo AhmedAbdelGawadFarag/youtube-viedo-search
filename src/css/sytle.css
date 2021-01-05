@@ -1,0 +1,19 @@
+.image-container{
+    display: grid;
+    grid-template-columns: 300px;
+   grid-auto-rows: 100px;
+    gap: 50px;
+    float: right;
+}
+.image-container div{
+    width: 200px;
+    height: 100px;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    
+}
+
+.image-container p{
+  
+}
