@@ -12,13 +12,14 @@ class YoutubeVideoList extends React.Component {
       <YoutubeVideoDetail
         key={video.id.videoId}
         videoDetail={video.snippet}
+        videoId={video.id.videoId}
       ></YoutubeVideoDetail>
     ));
 
     return (
-      <div>
-        {/* {videos[0]} */}
-        <div className="image-container">{videosDetails}</div>
+      <div className="web-page">
+        <div className="current-video">{videos[0]}</div>
+        <div className="video-detail-container">{videosDetails}</div>
       </div>
     );
   }
