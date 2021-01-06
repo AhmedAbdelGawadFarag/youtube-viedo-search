@@ -1,14 +1,19 @@
 import React from "react";
 class YoutubeVideoDetail extends React.Component {
-  onClick(event){
+  onClick(event) {
     event.preventDefault();
+    this.props.changeVideo(this.props.video);
   }
   render() {
-    const image = this.props.videoDetail.thumbnails.default;
-    const title = this.props.videoDetail.title;
-    console.log(this.props.videoId);
+    const videoDeatil = this.props.video.snippet;
+    const image = videoDeatil.thumbnails.default;
+    const title = videoDeatil.title;
+
     return (
-      <a href={`https://www.youtube.com/embed/${this.props.videoId}`} onClick={(event)=>this.onClick(event)}>
+      <a
+        href={`https://www.youtube.com/embed/${this.props.videoId}`}
+        onClick={(event) => this.onClick(event)}
+      >
         <div>
           <img src={image.url}></img>
           <p>{title}</p>
